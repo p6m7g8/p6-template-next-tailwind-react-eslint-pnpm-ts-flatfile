@@ -7,6 +7,9 @@ const config: Config = {
     '^@/(.*)$': '<rootDir>/src/$1',
   },
   testMatch: ['<rootDir>/test/**/*.test.ts'],
+  transform: {
+    '^.+\\.(js|jsx|ts|tsx)$': 'babel-jest',
+  }
 }
 
 export default config
