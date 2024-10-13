@@ -8,6 +8,10 @@
     "[typescriptreact]": {
       "editor.defaultFormatter": "dbaeumer.vscode-eslint"
     },
+    "[html]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+      "editor.formatOnSave": true
+    },
   // Disable Prettier as the default formatter and use ESLint instead
   "prettier.enable": false,
   "editor.formatOnSave": false,
@@ -29,6 +33,7 @@
     "jsonc",
     "yaml",
     "xml",
+    "html",
   ],
 
   // Ensure the TypeScript version from node_modules is used

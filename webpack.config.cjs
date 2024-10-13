@@ -4,7 +4,7 @@ const webpack = require('webpack');
 module.exports = (env, argv) => {
   return {
     mode: argv.mode,
-    entry: './src/index.ts',
+    entry: './src/index.tsx',
     output: {
       filename: 'bundle.js',
       path: path.resolve(__dirname, 'dist'),
@@ -14,14 +14,14 @@ module.exports = (env, argv) => {
     module: {
       rules: [
         {
-          test: /\.ts$/,
+          test: /\.(ts|tsx)$/,
           exclude: /node_modules/,
           use: 'babel-loader',
         },
       ],
     },
     resolve: {
-      extensions: ['.ts', '.js'],
+      extensions: ['.ts', '.tsx', '.js'],
       fallback: {
         crypto: require.resolve('crypto-browserify'),
         os: require.resolve('os-browserify/browser'),
