@@ -1,7 +1,15 @@
 import * as dotenv from 'dotenv';
-import * as fs from 'node:fs';
-import * as path from 'node:path';
-import process from 'node:process';
+
+// Only import Node.js core modules if the environment is Node.js
+let fs, path, process;
+
+if (typeof window === 'undefined') {
+  fs = require('fs');
+  path = require('path');
+  process = require('process');
+} else {
+  console.log("Running in the browser; 'fs', 'path', and 'process' are not available.");
+}
 
 // Load .env.defaults first
 dotenv.config({ path: path.resolve(__dirname, '../.env.default') });
