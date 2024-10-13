@@ -10,6 +10,7 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
+    "build:babel": "babel src --out-dir dist --extensions \".ts\"",
     "dev": "ts-node-dev src/index.ts",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
@@ -21,9 +22,14 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^3.7.3",
+    "@babel/cli": "^7.25.7",
+    "@babel/core": "^7.25.8",
+    "@babel/preset-env": "^7.25.8",
+    "@babel/preset-typescript": "^7.25.7",
     "@types/jest": "^29.5.13",
     "@types/node": "^22.7.5",
     "@typescript-eslint/parser": "^8.8.1",
+    "babel-jest": "^29.7.0",
     "eslint": "9",
     "eslint-plugin-import": "^2.31.0",
     "identity-obj-proxy": "^3.0.0",
