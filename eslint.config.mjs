@@ -7,10 +7,15 @@ import tailwindcss from 'eslint-plugin-tailwindcss'
 export default antfu({
   //  files: ['jest.config.ts', 'jest.setup.tsx', 'src/**/*.tsx', 'src/**/*.ts', 'test/**/*.tsx', 'test/**/*.ts'],
   ignores: [
-    'src/dotenv.ts',
-    'next-env.d.ts',
-    'tsconfig.json',
+    '.mergify.yml',
+    '.pnpm-store/',
     '.vscode/settings.json',
+    'next-env.d.ts',
+    'out/',
+    'package.json',
+    'src/dotenv.ts',
+    'src/pages/index.tsx',
+    'tsconfig.json',
   ],
   plugins: {
     react,
