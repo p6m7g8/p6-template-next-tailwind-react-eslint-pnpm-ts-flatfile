@@ -4,6 +4,7 @@ const webpack = require('webpack')
 
 module.exports = {
   ...nextTranslate(),
+  output: 'export',
   webpack: (config, { isServer }) => {
     config.module.rules.push({
       test: /\.(ts|tsx)$/,

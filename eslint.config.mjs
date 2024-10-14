@@ -4,7 +4,11 @@ import react from 'eslint-plugin-react'
 import reactHooks from 'eslint-plugin-react-hooks'
 
 export default antfu({
-//  files: ['jest.config.ts', 'jest.setup.tsx', 'src/**/*.tsx', 'src/**/*.ts', 'test/**/*.tsx', 'test/**/*.ts'],
+  //  files: ['jest.config.ts', 'jest.setup.tsx', 'src/**/*.tsx', 'src/**/*.ts', 'test/**/*.tsx', 'test/**/*.ts'],
+  ignores: [
+    'src/dotenv.ts',
+    'next-env.d.ts',
+  ],
   plugins: {
     react,
     'react-hooks': reactHooks,
