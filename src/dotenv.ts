@@ -6,8 +6,7 @@ if (typeof window === 'undefined') {
   const path = require('node:path')
 
   // Load .env.default first
-  dotenv.config({ path: path.resolve(__dirname, '../.env.default') });
-  ``
+  dotenv.config({ path: path.resolve(__dirname, '../.env.default') })
   // Load the environment-specific .env.$ENV file based on NODE_ENV if it exists
   const { NODE_ENV } = process.env
   const envFilePath = path.resolve(__dirname, `../.env.${NODE_ENV}`)
