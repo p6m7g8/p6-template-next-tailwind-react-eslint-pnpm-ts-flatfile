@@ -1,4 +1,10 @@
 {
+  "[ignore]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "[dotenv]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
   "editor.defaultFormatter": "dbaeumer.vscode-eslint",
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
@@ -34,7 +40,7 @@
   "typescript.preferences.importModuleSpecifier": "relative",
   "typescript.referencesCodeLens.enabled": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "[ignore]": {
-    "editor.defaultFormatter": "foxundermoon.shell-format"
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
   }
 }
