@@ -1,28 +1,10 @@
 {
-   "[javascript]": {
-      "editor.defaultFormatter": "vscode.typescript-language-features"
-    },
-    "[typescript]": {
-      "editor.defaultFormatter": "dbaeumer.vscode-eslint"
-    },
-    "[typescriptreact]": {
-      "editor.defaultFormatter": "dbaeumer.vscode-eslint"
-    },
-    "[html]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode",
-      "editor.formatOnSave": true
-    },
-  // Disable Prettier as the default formatter and use ESLint instead
-  "prettier.enable": false,
-  "editor.formatOnSave": false,
-
-  // Auto fix ESLint issues on save, but do not organize imports automatically
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "explicit",
+    "source.fixAll.eslint": "always",
     "source.organizeImports": "never"
   },
-
-  // Enable ESLint for these files
   "eslint.validate": [
     "javascript",
     "javascriptreact",
@@ -33,38 +15,23 @@
     "jsonc",
     "yaml",
     "xml",
-    "html",
+    "html"
   ],
-
-  // Ensure the TypeScript version from node_modules is used
   "typescript.tsdk": "node_modules/typescript/lib",
-
-  // Disable built-in TypeScript formatter to use ESLint
   "typescript.format.enable": false,
-
-  // Jest
   "jest.runMode": "on-demand",
-
-  // Customize editor settings
   "editor.tabSize": 2,
-  "editor.detectIndentation": false,
-  "files.eol": "\n",
   "files.exclude": {
     "node_modules": true,
     "dist": true,
     ".cache": true
   },
-
-  // File associations to handle Jest test files
   "files.associations": {
     "*.test.tsx": "typescriptreact",
     "*.test.ts": "typescript"
   },
-
-  // Auto-import suggestions for TypeScript
   "typescript.suggest.autoImports": true,
   "typescript.preferences.importModuleSpecifier": "relative",
   "typescript.referencesCodeLens.enabled": true,
   "typescript.updateImportsOnFileMove.enabled": "always"
 }
-
