@@ -17,6 +17,8 @@ const customJestConfig: Config = {
     '^.+\\.(js|jsx|ts|tsx)$': '@swc/jest',
   },
   setupFilesAfterEnv: ['<rootDir>/jest.setup.tsx'],
+  collectCoverage: true,
+  coverageDirectory: 'coverage',
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
 }
 
