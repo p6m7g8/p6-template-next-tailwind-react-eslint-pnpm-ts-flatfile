@@ -1,6 +1,6 @@
-import Head from 'next/head';
+import Head from 'next/head'
 
-const Home = () => {
+function Home() {
   return (
     <>
       <Head>
@@ -15,7 +15,7 @@ const Home = () => {
         {/* Add additional content here */}
       </main>
     </>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home
