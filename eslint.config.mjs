@@ -5,7 +5,6 @@ import reactHooks from 'eslint-plugin-react-hooks'
 import tailwindcss from 'eslint-plugin-tailwindcss'
 
 export default antfu({
-  //  files: ['jest.config.ts', 'jest.setup.tsx', 'src/**/*.tsx', 'src/**/*.ts', 'test/**/*.tsx', 'test/**/*.ts'],
   ignores: [
     '.mergify.yml',
     '.pnpm-store/',
@@ -20,10 +19,12 @@ export default antfu({
   plugins: {
     react,
     'react-hooks': reactHooks,
-    '@next/eslint-plugin-next': nextPlugin,
+    'next': nextPlugin,
     tailwindcss,
   },
+  extends: ['next/core-web-vitals'],
   languageOptions: {
+    ecmaVersion: 'latest',
     parserOptions: {
       ecmaFeatures: {
         jsx: true,
@@ -35,8 +36,16 @@ export default antfu({
     'react/react-in-jsx-scope': 'off',
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'error',
-    // '@next/next/no-img-element': 'error',
-    // '@next/next/no-page-custom-font': 'error',
+    'next/no-img-element': 'error',
+    'next/no-page-custom-font': 'error',
+    'next/no-sync-scripts': 'error',
+    'next/google-font-display': 'error',
+    'next/no-css-tags': 'error',
+    'next/no-document-import-in-page': 'error',
+    'next/next-script-for-ga': 'error',
+    'next/no-html-link-for-pages': 'error',
+    'next/no-assign-module-variable': 'error',
+    'next/no-before-interactive-script-outside-document': 'error',
     'tailwindcss/classnames-order': 'error',
   },
   settings: {
