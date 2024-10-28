@@ -47,6 +47,17 @@ jobs:
           date --version
           echo "==========> git"
           git --version
+<<<<<<< Updated upstream
+=======
+          echo "===========> rust"
+          rustc --version
+          echo "===========> helm"
+          helm version
+          echo "===========> jq"
+          jq --version
+          echo "===========> yq"
+          yq --version
+>>>>>>> Stashed changes
           echo "=========> GITHUB_PATH"
           cat $GITHUB_PATH
           echo "=========> PATH"
