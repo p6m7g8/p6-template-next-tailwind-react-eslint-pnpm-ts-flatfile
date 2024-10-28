@@ -6,6 +6,7 @@ import tailwindcss from 'eslint-plugin-tailwindcss'
 
 export default antfu({
   ignores: [
+    '.github/',
     '.mergify.yml',
     '.pnpm-store/',
     '.vscode/settings.json',
