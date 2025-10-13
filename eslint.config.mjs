@@ -20,7 +20,7 @@ export default antfu({
   plugins: {
     react,
     'react-hooks': reactHooks,
-    'next': nextPlugin,
+    '@next/next': nextPlugin,
     tailwindcss,
   },
   extends: ['next/core-web-vitals'],
