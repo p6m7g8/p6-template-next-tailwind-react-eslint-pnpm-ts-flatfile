@@ -43,7 +43,7 @@
     "dotenv": "^17.4.2",
     "jest-environment-jsdom": "^30.5.1",
     "js-yaml": "^5.4.1",
-    "next": "16.3.4",
+    "next": "16.3.5",
     "next-safe": "^3.5.0",
     "react": "^19.3.0",
     "react-dom": "^19.3.0",
