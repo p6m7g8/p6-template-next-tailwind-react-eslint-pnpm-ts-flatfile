@@ -37,13 +37,13 @@
     "type": "tsc --noEmit"
   },
   "dependencies": {
-    "@next/mdx": "^16.4.4",
+    "@next/mdx": "^16.4.5",
     "@tailwindcss/typography": "^0.5.20",
     "buffer": "^6.0.3",
     "dotenv": "^18.0.9",
     "jest-environment-jsdom": "^30.5.2",
     "js-yaml": "^5.5.0",
-    "next": "16.4.4",
+    "next": "16.4.5",
     "next-safe": "^3.5.0",
     "react": "^19.3.1",
     "react-dom": "^19.3.1",
